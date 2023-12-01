@@ -1,0 +1,46 @@
+/********* FORMATAÇÃO Rodapé *********/
+.secao-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.rodape-logo img{
+    width: auto;
+    height: 80px;
+    margin: 50px 50px;
+}
+
+.rodape-info {
+    display: flex;
+    flex-flow: column wrap;
+    width: 220px;
+    padding: 5px;
+    color: #fff;
+    margin: 40px 50px;
+}
+
+.rodape-copyright {
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+@media screen and (max-width: 768px){
+    .secao-rodape {
+      flex-direction: column;
+      padding: 80px 0;
+    }
+    
+
+    .rodape-info {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+    }
+  }

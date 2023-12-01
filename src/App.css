@@ -1,0 +1,13 @@
+/************* FORMATAÇÃO GERAL **********************/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.limita-container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}

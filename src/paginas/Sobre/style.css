@@ -1,0 +1,92 @@
+/******** FORMATAÇÃO SEÇÃO BANNER **********/
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.fundo-banner {
+    display: flex;
+}
+
+.secao-banner-sobre{
+    width: 100%;
+    height: 80vh;    
+    background-image: url('/public/assets/banner-sobre.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-secao-banner-sobre {
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 5px 3px #474747;
+}
+
+.texto-sobre div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.texto-sobre h2{
+    font-size: 35px;
+    line-height: 26px;
+    font-weight: 900;
+}
+
+.texto-sobre span {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.texto-sobre p {
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.banner-sobre div{
+    display: flex;
+    margin-top: 25px;
+}
+
+.foto-sobre img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+/******** MEDIA QUERY **********/
+
+@media screen and (max-width: 768px) {
+    .texto-secao-banner-sobre h1{
+        font-size: 60px;
+    }
+
+    .foto-sobre {
+        flex-direction: column;
+    }
+    .foto-sobre img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 436px){
+    .texto-secao-banner-sobre h1 {
+        font-size: 40px;
+    }
+}
